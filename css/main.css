@@ -316,6 +316,14 @@ header .badges .badge{
   font-weight: 700;
   margin-right: 20px;
 }
+.notice .inner__left .swiper .swiper-slide{
+  height: 62px;
+  display: flex;
+  align-items: center;
+}
+.notice .inner__left .swiper .swiper-slide a{
+  color: #fff;
+}
 .notice .inner__left .swiper{
   height: 62px;
   flex-grow: 1;
@@ -333,4 +341,48 @@ header .badges .badge{
 }
 .notice .inner__right{
   width: 30%;
+}
+/* PROMOTION */
+.promotion{
+  display: flex;
+  justify-content: center;
+  background-color: #f6f5ef;
+  overflow: hidden;
+  position: relative;
+  height: 663px;
+}
+.promotion .swiper{
+  /* 819px 슬라이드 3개 && 사이 여백 10px 2개 = 2477px */
+  width: calc(819px * 3 + 10px * 2);
+  height: 553px;
+  flex-shrink: 0;
+}
+.promotion .swiper-slide{
+  position: relative;
+  opacity: .5;
+  transition: opacity 1s;
+}
+.promotion .swiper-slide-active{
+  opacity: 1;
+}
+.promotion .swiper-slide .btn{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.promotion .swiper.pagination{
+  bottom: 40px;
+  z-index: 1;
+}
+.promotion .swiper-pagination .swiper-pagination-bullet{
+  background-color: transparent;
+  background-image: url("../images/promotion_slide_pager.png");
+  width: 13px;
+  height: 12px;
+  margin-right: 6px;
+}
+.promotion .swiper-pagination .swiper-pagination-bullet:last-child{
+  margin-right: 0;
 }
