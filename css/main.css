@@ -341,6 +341,24 @@ header .badges .badge{
 }
 .notice .inner__right{
   width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.notice .inner__right h2{
+  font-size: 17px;
+  font-weight: 700;
+}
+.notice .inner__right .toggle-promotion{
+  width: 62px;
+  height: 62px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notice .inner__right .toggle-promotion .material-icons{
+  font-size: 30px;
 }
 /* PROMOTION */
 .promotion{
@@ -350,6 +368,10 @@ header .badges .badge{
   overflow: hidden;
   position: relative;
   height: 663px;
+  transition: height .4s;
+}
+.promotion.hide{
+  height: 0;
 }
 .promotion .swiper{
   /* 819px 슬라이드 3개 && 사이 여백 10px 2개 = 2477px */
@@ -372,8 +394,8 @@ header .badges .badge{
   right: 0;
   margin: auto;
 }
-.promotion .swiper.pagination{
-  bottom: 40px;
+.promotion .swiper-pagination{
+  bottom: 40px !important;
   z-index: 1;
 }
 .promotion .swiper-pagination .swiper-pagination-bullet{
@@ -385,4 +407,91 @@ header .badges .badge{
 }
 .promotion .swiper-pagination .swiper-pagination-bullet:last-child{
   margin-right: 0;
+}
+.promotion .swiper-button-prev,
+.promotion .swiper-button-next{
+  width: 42px;
+  height: 42px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  top: 300px;
+  z-index: 1;
+  color: #333;
+}
+.promotion .swiper-button-prev{
+  left: 50%;
+  margin-left: -480px;
+}
+.promotion .swiper-button-next{
+  right: 50%;
+  margin-right: -480px;
+}
+.promotion .swiper-button-prev:hover,
+.promotion .swiper-button-next:hover{
+  background-color: #333;
+  color: #fff;
+}
+.promotion .swiper-button-prev::after,
+.promotion .swiper-button-next::after{
+  display: none;
+}
+/* REWARDS */
+.rewards{
+  position: relative;
+}
+.rewards .bg-left{
+  width: 50%;
+  height: 100%;
+  background-color: #272727;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.rewards .bg-right{
+  width: 50%;
+  height: 100%;
+  background-color: #d5c798;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.rewards .inner{
+  height: 241px;
+  background-image: url(../images/rewards.jpg);
+}
+.rewards .btn-group{
+  position: absolute;
+  right: 0;
+  bottom: 24px;
+  width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.rewards .btn-group .btn.sign-up{
+  margin-right: 10px;
+}
+.rewards .btn-group .btn.sign-in{
+  width: 110px;
+}
+.rewards .btn-group .btn.gift{
+  margin-top: 10px;
+  flex-grow: 1;
+}
+/* YOUTUBE VIDEO */
+.youtube{
+  position: relative;
+  height: 700px;
+  background-color: #333;
+  overflow: hidden;
+}
+.youtube .youtube__area{
+  --width: 1920px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: var(--width);
+  height: calc(var(--width) * 9 / 16);
+  background-color: orange;
+  margin-left: calc(var(--width) / -2);
+  margin-top: calc(var(--width) / -2 * 9 / 16);
 }
