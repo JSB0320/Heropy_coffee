@@ -76,3 +76,24 @@ promotionToggleBtn.addEventListener('click', function(){
     promotionEl.classList.add('hide');
   }
 })
+gsap.to('.floating1', 1.5, {
+  delay: 1, //얼마나 늦게 애니메이션을 시작할 것인지 지연시간을 설정
+  y: 15, //'transform: translateY(수치);와 같음. 수직으로 얼마나 움직일지 설정
+  repeat: -1, //몇 번 반복하는지를 설정, '-1'은 무한 반복
+  yoyo: true, //한번 재생된 애니메이션을 다시 뒤로 재생
+  ease: Power1.easeInOut //Easing 함수 적용
+});
+gsap.to('.floating2', 2, {
+  delay: .5,
+  y: 20,
+  repeat: -1,
+  yoyo: true,
+  ease: Power1.easeInOut 
+})
+gsap.to('.floating3', 2.5, {
+  delay: 1.5,
+  y: 20,
+  repeat: -1,
+  yoyo: true,
+  ease: Power1.easeInOut 
+})
