@@ -60,7 +60,7 @@ img{
 }
 .btn.btn--white{
   color: #FFF;
-  background-color: #FFF;
+  border-color: #FFF;
 }
 .btn.btn--white:hover{
   color: #333;
@@ -488,11 +488,11 @@ header .badges .badge{
   --width: 1920px;
   position: absolute;
   left: 50%;
+  margin-left: calc(var(--width) / -2);
   top: 50%;
+  margin-top: calc(var(--width) / -2 * 9 / 16);
   width: var(--width);
   height: calc(var(--width) * 9 / 16);
-  margin-left: calc(var(--width) / -2);
-  margin-top: calc(var(--width) / -2 * 9 / 16);
 }
 #player {
   width: 100%;
@@ -510,7 +510,7 @@ header .badges .badge{
   background-color: rgba(0, 0, 0, .3);
   background-image: url(../images/video_cover_pattern.png);
 }
-.youtube .ineer{
+.youtube .inner{
   height: 100%;
 }
 .youtube .floating1{
@@ -523,8 +523,117 @@ header .badges .badge{
   top: 350px;
   left: 150px;
 }
-.youtube .floating3{
+/*SEASON PRODUCT*/
+.season-product{
+  background-image: url(../images/season_product_bg.jpg);
+}
+.season-product .inner{
+  height: 400px;
+}
+.season-product .floating3{
   position: absolute;
-  bottom: -200px;
+  top: -200px;
   right: 0;
+}
+.season-product .text-group{
+  position: absolute;
+  top: 110px;
+  right: 100px;
+}
+.season-product .text-group .title{
+  margin-bottom: 10px;
+}
+.season-product .text-group .description{
+  margin-bottom: 15px;
+}
+/* RESERVE COFFEE */
+.reserve-coffee{
+  background-image: url("../images/reserve_bg.jpg");
+}
+.reserve-coffee .inner{
+  height: 400px;
+}
+.reserve-coffee .reserve-logo{
+  position: absolute;
+  top: 110px;
+  left: 0;
+}
+.reserve-coffee .text-group{
+  position: absolute;
+  top: 124px;
+  left: 208px;
+}
+.reserve-coffee .product{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* PICK YOUR FAVORITE */
+.pick-your-favorite{
+  background-image: url(../images/favorite_bg.jpg);
+}
+.pick-your-favorite .inner{
+  padding: 110px 0;
+}
+.pick-your-favorite .text-group{
+  width: 362px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.pick-your-favorite .text-group .title{
+  margin-bottom: 40px;
+}
+.pick-your-favorite .text-group .description{
+  margin-bottom: 40px;
+}
+/* RESERVE STORE */
+.reserve-store{
+  background-image: url("../images/reserve_store_bg.jpg");
+}
+.reserve-store .inner{
+  height: 600px;
+}
+/* FIND THE STORE */
+.find-store{
+  background-image: url("../images/find_store_bg.jpg");
+}
+.find-store .inner{
+  height: 400px;
+}
+.find-store .texture1{
+  position: absolute;
+  top: 0;
+  left: 400px;
+}
+.find-store .texture2{
+  position: absolute;
+  bottom: 0;
+  right: 0;;
+}
+.find-store .picture1{
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px 0 rgba(0,0,0,.5);
+  position: absolute;
+  top: -60px;
+  left: 0;
+}
+.find-store .picture2{
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px 0 rgba(0,0,0,.5);
+  position: absolute;
+  top: 150px;
+  left: 250px;
+}
+.find-store .text-group{
+  position: absolute;
+  top: 120px;
+  left: 550px;
+}
+.find-store .text-group .title{
+  margin-bottom: 20px;
+}
+.find-store .text-group .description{
+  margin-bottom: 20px;
 }
